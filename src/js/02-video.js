@@ -14,6 +14,4 @@ const lastPayerTime = localStorage.getItem('videoplayer-current-time');
 
 if(lastPayerTime){
     player.setCurrentTime(lastPayerTime);
-} else {
-    console.log(' ');
-}
+} 

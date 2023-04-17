@@ -19,6 +19,7 @@ function onInputData(e) {
 
 }
 
+
 function reloedPage() {
     if (dataForm) {
         email.value = dataForm.email || '' ;
@@ -30,15 +31,13 @@ function onFormSubmit(e) {
     e.preventDefault();
 
     if(email.value === '' || message.value === '') {
-return alert(' ');
+return alert('Please fill in all fields!');
     } else {
         console.log({email: email.value, message: message.value});
 
     }
 
-    localStorage.removeItem(KEY);
+localStorage.removeItem(KEY);
 e.currentTarget.reset();
 dataForm = {};
 }
-
-console.log(KEY);
